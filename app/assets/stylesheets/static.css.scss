@@ -1,3 +1,32 @@
 // Place all the styles related to the Static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #24b2b6;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Helvetica Neue";
+  .intro {
+    color: #fff;
+    h1 {
+      font-size: 146px;
+      text-align: center;
+    }
+    p {
+      font-size: 54px;
+    }
+  }
+  button {
+    color: white;
+    font-size: 72px;
+    background: none;
+    border: none;
+  }
+}
+
+
