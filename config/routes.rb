@@ -1,17 +1,12 @@
 IPadQuiz::Application.routes.draw do
 
-  root 'quizzes#home'
 
+  root 'quizzes#home'
 
   get '/affirmative' => 'quizzes#affirmative'
   get '/negative' => 'quizzes#negative'
 
-
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  resources :questions
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
