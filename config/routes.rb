@@ -3,6 +3,10 @@ IPadQuiz::Application.routes.draw do
   root 'quizzes#home'
 
 
+  get '/affirmative' => 'quizzes#affirmative'
+  get '/negative' => 'quizzes#negative'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

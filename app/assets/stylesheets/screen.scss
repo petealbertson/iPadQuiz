@@ -6,26 +6,35 @@ body {
   width: 100%;
   height: auto;
   font-family: "Helvetica Neue";
-  .intro {
+  .intro, .result {
     color: #fff;
     h1 {
       margin: 0;
-      font-size: 56px;
+      font-size: 46px;
       text-align: center;
     }
+
+  }
+  .next {
+    text-align: center;
+    color: #fff;
     p {
       text-align: center;
       padding: 10px;
       font-size: 24px;
     }
-  }
-  .next {
-    text-align: center;
-    i {
+    .fa {
       color: #fff;
       font-size: 92px;
       background: none;
       border: none;
+    }
+    .fa-twitter {
+      color: white;
+      font-size: 20px;
+    }
+    a {
+      color: white;
     }
   }
 }
