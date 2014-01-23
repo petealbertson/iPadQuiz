@@ -4,7 +4,7 @@ def showresults
 
 result = Result.find_by(:id => params[:id])
 
-  if result.total_score > 3
+  if result.total_score > 30
 
     render "affirmative"
 
