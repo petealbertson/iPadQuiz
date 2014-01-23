@@ -5,22 +5,27 @@ body {
 .box {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   font-family: "Helvetica Neue";
   .intro {
     color: #fff;
     h1 {
-      font-size: 146px;
+      margin: 0;
+      font-size: 56px;
       text-align: center;
     }
     p {
-      font-size: 54px;
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
     }
   }
-  button {
-    color: white;
-    font-size: 72px;
-    background: none;
-    border: none;
+  .next {
+    text-align: center;
+    i {
+      color: #fff;
+      font-size: 92px;
+      background: none;
+      border: none;
+    }
   }
 }
