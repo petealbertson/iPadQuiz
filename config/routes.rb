@@ -1,5 +1,7 @@
 IPadQuiz::Application.routes.draw do
 
+  get "questions/index"
+  get "questions/show"
   root 'quizzes#home'
 
   resources :questions
