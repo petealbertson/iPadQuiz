@@ -3,8 +3,12 @@ IPadQuiz::Application.routes.draw do
 
   root 'quizzes#home'
 
-  get '/affirmative' => 'quizzes#affirmative'
-  get '/negative' => 'quizzes#negative'
+  get '/checkscore' => 'quizzes#checkscore'
+
+  get '/results/:id' => 'results#showresults', :as => 'showresults'
+
+  get '/results/:id' => 'results#show'
+
 
   resources :questions
 

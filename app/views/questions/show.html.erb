@@ -1,7 +1,7 @@
 
 <section class="question-text">
 
-  <h2>This is sample question text that we will later replace with a real question?</h2>
+  <h2><%= @question.question_text %></h2>
 
 </section>
 
@@ -9,10 +9,23 @@
 
   <ul>
 
-    <a href=""><li>Pizza</li></a>
-    <a href=""><li>Pizza</li></a>
-    <a href=""><li>Pizza</li></a>
-    <a href=""><li>Azzip</li></a>
+    <% @answers.each do |answer| %>
+
+      <% if @question.id == @last_question.id %>
+
+        <a href="/checkscore?answervalue=<%= answer.value %>&currentresult=<%= @result.id %>"><li><%= answer.answer_text %></li></a>
+
+      <% else %>
+
+        <a href="/questions/<%= @question.id + 1 %>?answervalue=<%= answer.value %>&currentresult=<%= @result.id %>"><li><%= answer.answer_text %></li></a>
+
+      <% end %>
+
+
+
+
+
+    <% end %>
 
   </ul>
 
