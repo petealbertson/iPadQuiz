@@ -51,6 +51,11 @@ body {
       color: white;
     }
   }
+  footer {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
 
 
@@ -121,11 +126,10 @@ section {
     margin-top: 20px;
   }
 
-
 }
 
 @media screen and (min-width: 700px) {
-  .intro {
+  .intro, .result {
     padding: 100px;
     p {
       width: 500px;
@@ -135,11 +139,19 @@ section {
   ul {
     padding-top: 50px;
   }
+  i {
+    padding-bottom: 40px;
+  }
   .question-text {
     h2 {
       text-shadow: 2px 1px $border-color;
       padding-top: 100px;
     }
+  }
+  footer {
+    color: white;
+    text-align: center;
+    bottom: 0;
   }
 }
 
