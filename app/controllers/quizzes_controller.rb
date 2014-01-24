@@ -9,6 +9,7 @@ def home
 @r.save
 
 
+
 end
 
 

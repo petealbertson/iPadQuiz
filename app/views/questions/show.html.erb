@@ -17,7 +17,7 @@
 
       <% else %>
 
-        <a href="/questions/<%= @question.id + 1 %>?answervalue=<%= answer.value %>&currentresult=<%= @result.id %>"><li><%= answer.answer_text %></li></a>
+        <a href="/questions/<%= @question.id + 1 %>?answervalue=<%= answer.value %>&currentresult=<%= @result.id %>&lastQid=<%= @question.id %>"><li><%= answer.answer_text %></li></a>
 
       <% end %>
 
@@ -30,11 +30,11 @@
   </ul>
 
 </section>
+<% if params[:lastQid] %>
+  <section class="feedback">
 
-<section class="feedback">
-
-<p>This is some feedback.This is some feedback.This is some feedback.This is some feedback.This is some feedback.</p>
+  <p><%= Question.find_by(id: params[:lastQid]).fact %></p>
 
 
-</section>
-
+  </section>
+<% end %>
