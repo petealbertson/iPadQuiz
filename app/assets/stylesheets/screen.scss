@@ -2,6 +2,7 @@
 
 $primary-color: #2980b9;
 $secondary-color: #3498db;
+$border-color: #363938;
 
 body {
   background-color: $primary-color;
@@ -69,7 +70,6 @@ section {
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 10px;
-    text-shadow: 2px 1px #363938;
     h2 {
       color: #fff;
       font-size: 32px;
@@ -114,9 +114,9 @@ section {
   &.feedback {
     margin: 0 auto;
     max-width: 500px;
-    color: #363938;
+    color: $border-color;
     background-color: #FF9908;
-    border: 1px solid #363938;
+    border: 1px solid $border-color;
     border-radius: 10px;
     margin-top: 20px;
   }
@@ -137,6 +137,7 @@ section {
   }
   .question-text {
     h2 {
+      text-shadow: 2px 1px $border-color;
       padding-top: 100px;
     }
   }
